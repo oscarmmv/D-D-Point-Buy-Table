@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Point Buy Table</title>
+        <link rel="Stylesheet" href="style.css"/>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script> 
+    </head>
+    <body onload="update();">
+        <h1>Point Buy Table</h1>
+        <table id="point-table">
+            <tr>
+                <td>Atribute</td>
+                <td>Ability Score</td>
+                <td>Proficiency Mod</td>
+                <td>Total Score</td>
+                <td>Ability Modifier</td>
+                <td>Point Cost</td>
+            </tr>
+            <tr>
+                <td>Strength</td>
+                <td><input type="number" id="str-score" value="8" min="8" max="15" step="1" onchange="update()"></td>
+                <td><input type="number" id="str-mod" value="0" min="0" max="2" step="1" onchange="update()"></td>
+                <td id="total-str-score">--</td>
+                <td id="str-ab-mod">AMod</td>
+                <td id="str-cost">Point</td>
+            </tr>   
+            <tr>
+                <td>Dexterity</td>
+                <td><input type="number" id="dex-score" value="8" min="8" max="15" step="1" onchange="update()"></td>
+                <td><input type="number" id="dex-mod" value="0" min="0" max="2" step="1" onchange="update()"></td>
+                <td id="total-dex-score">--</td>
+                <td id="dex-ab-mod">AMod</td>
+                <td id="dex-cost">Point</td>
+            </tr>
+            <tr>
+                <td>Constitution</td>
+                <td><input type="number" id="con-score" value="8" min="8" max="15" step="1" onchange="update()"></td>
+                <td><input type="number" id="con-mod" value="0" min="0" max="2" step="1" onchange="update()"></td>
+                <td id="total-con-score">--</td>
+                <td id="con-ab-mod">AMod</td>
+                <td id="con-cost">Point</td>
+            </tr>
+            <tr>
+                <td>Intelligence</td>
+                <td><input type="number" id="int-score" value="8" min="8" max="15" step="1" onchange="update()"></td>
+                <td><input type="number" id="int-mod" value="0" min="0" max="2" step="1" onchange="update()"></td>
+                <td id="total-int-score">--</td>
+                <td id="int-ab-mod">AMod</td>
+                <td id="int-cost">Point</td>
+            </tr>
+            <tr>
+                <td>Wisdom</td>
+                <td><input type="number" id="wis-score" value="8" min="8" max="15" step="1" onchange="update()"></td>
+                <td><input type="number" id="wis-mod" value="0" min="0" max="2" step="1" onchange="update()"></td>
+                <td id="total-wis-score">--</td>
+                <td id="wis-ab-mod">AMod</td>
+                <td id="wis-cost">Point</td>
+            </tr>
+            <tr>
+                <td>Charisma</td>
+                <td><input type="number" id="cha-score" value="8" min="8" max="15" step="1" onchange="update()"></td>
+                <td><input type="number" id="cha-mod" value="0" min="0" max="2" step="1" onchange="update()"></td>
+                <td id="total-cha-score">--</td>
+                <td id="cha-ab-mod">AMod</td>
+                <td id="cha-cost">Point</td>
+            </tr>
+          </table>
+          <div id="total-point">Total Point</div>
+    </body>
+</html>
